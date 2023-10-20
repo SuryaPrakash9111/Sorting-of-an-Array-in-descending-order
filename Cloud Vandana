@@ -1,0 +1,8 @@
+var userInput = prompt("Enter a list of values separated by commas:");
+var inputArray = userInput.split(',').map(function(item) {
+  return item.trim(); 
+});
+inputArray.sort(function(a, b) {
+  return b - a;
+});
+console.log(inputArray);
